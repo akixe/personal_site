@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>Akixe's Site</h1>
-            {% include nav.html %}
-        </header>
-        {{content}}
-    </body>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% if page.path == 'index.html' %}
+      {% include header.html %}
+    {% else %}
+      {% include header.html base="index.html" %}
+    {% endif %}
+
+
+    <div id='main' role='main'>
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
 </html>
