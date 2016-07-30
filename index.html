@@ -4,14 +4,14 @@ title: Akixe Otegi
 slides:
   - bg: images/@stock/fullscreen-slide-1.jpg
     title: Fullstack Developer
-    tagline: Desarrollo backend, frontend, mobile
+    tagline: Poseo experiencia y conocimientos sobre desarrollo a distintos niveles <br> Frontend <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> Backend <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> Mobile <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> DevOps 
     buttons:
-      - text: Ver portfolio
+      - text: Ver algunos de mis trabajos
         class: small
         url: https://github.com/akixe?tab=repositories
   - bg: http://themes.blahlab.com/squarebox/wp-content/uploads/2014/12/out-short.jpg
-    title: + 15 años de experiencia profesional
-    tagline: Ámplia experiencia en el sector profesional
+    title: <i class="fa fa-plus-circle" style="color:#F9CE06"></i> 15 años de experiencia profesional
+    tagline: Trabajando en el desarrollo de una ámplia variedad de proyectos y aplicaciones desde hace más de 15 años 
     videos:
       - type: webm
         url: http://themes.blahlab.com/squarebox/wp-content/uploads/2014/11/out-short.webm
@@ -19,11 +19,25 @@ slides:
         url: http://themes.blahlab.com/squarebox/wp-content/uploads/2014/11/out-short.mp4
   - bg: ../images/@stock/fullscreen-slide-3.jpg
     title: Alta competencia en desarrollo web
-    tagline: Especialidad en desarrollo frontend con JavaScript
+    tagline: Mi especialidad es el desarrollo de aplicaciones para distintas plataformas con tecnología web<br>Node <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> PHP <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> Javascript <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> Angular <i class="fa fa-ellipsis-v" style="color:#F9CE06"></i> .NET
     buttons:
-      - text: Ver cursos
+      - text: Ver algunos de mis trabajos
         class: small
-        url: #about
+        url: /#portfolio
+  - bg: ../images/@stock/fullscreen-slide-3.jpg
+    title: Desarrollo GIS
+    tagline: Llevo más de 8 años trabajando en el sector geoespacial <br> Actualmente trabajo en SGSmap
+    buttons:
+      - text: Ir a la web principal de mi empresa
+        class: small
+        url: http://www.sgsmap.com
+  - bg: ../images/@stock/fullscreen-slide-3.jpg
+    title: Mejora contínua
+    tagline: Reciclando conocimientos y explorando nuevas herramientas y tecnologías contínuamente.
+    buttons:
+      - text: Ver qué he estado aprendiendo últimamente
+        class: small
+        url: /#training
 works:
   - image: ../images/@stock/one-page-work-1.jpg
     title: Beautiful Girl
@@ -113,7 +127,6 @@ socials:
         <li class='frame centered-text {{style}}'>
           <h1>{{slide.title}}</h1>
           <p>{{slide.tagline}}</p>
-          <div class='two spacing'></div>
           <div class='buttons-wrapper'>
             {% for button in slide.buttons %}
               <a class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
